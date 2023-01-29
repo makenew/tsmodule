@@ -1,0 +1,28 @@
+{
+  "extends": "./tsconfig.standard.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "strict": true,
+    "module": "nodenext",
+    "esModuleInterop": true,
+    "target": "es2021",
+    "jsx": "react-jsx",
+    "declaration": true,
+    "sourceMap": true,
+    "newLine": "lf",
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedParameters": true,
+    "importsNotUsedAsValues": "error",
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "index.js": ["./src/index.ts"],
+      "lib/*": ["./src/lib/*"]
+    }
+  },
+  "files": ["src/index.ts"],
+  "include": ["src/**/*", "test/**/*", "examples/**/*"]
+}

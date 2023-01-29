@@ -1,0 +1,54 @@
+{
+  "root": true,
+  "extends": ["standard-with-typescript", "prettier"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "no-console": "warn",
+    "import/extensions": ["error", "ignorePackages"],
+    "@typescript-eslint/consistent-type-imports": [
+      "warn",
+      {
+        "fixStyle": "inline-type-imports"
+      }
+    ],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreDeclarationSort": true,
+        "allowSeparatedGroups": true
+      }
+    ],
+    "import/no-duplicates": ["error", { "prefer-inline": true }],
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc"
+        },
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"],
+        "pathGroups": [
+          {
+            "pattern": "index.js",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "lib/**",
+            "group": "internal"
+          }
+        ]
+      }
+    ]
+  }
+}

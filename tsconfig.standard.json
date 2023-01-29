@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": true,
+    "allowUnusedLabels": true,
+    "noFallthroughCasesInSwitch": false,
+    "noUnusedLocals": false
+  },
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "https://github.com/standard/eslint-config-standard-with-typescript/issues/1020"
+}

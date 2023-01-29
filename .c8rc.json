@@ -1,0 +1,10 @@
+{
+  "exclude": [
+    "**/index.ts",
+    "package/**/*.ts",
+    "examples/**/*.ts",
+    "**/*.spec.ts",
+    "ava.config.js"
+  ],
+  "reporter": ["html", "lcov", "text"]
+}
