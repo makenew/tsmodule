@@ -11,7 +11,7 @@ Bootstrap a new TypeScript module in five minutes or less.
 
 ### Features
 
-- Write Strongly typed JavaScript with [TypeScript].
+- Strongly typed JavaScript with [TypeScript].
 - [Node.js]'s [npm] package structure.
 - Package management with [npm].
 - Examples with configurable options and arguments powered by [yargs].
