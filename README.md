@@ -1,7 +1,7 @@
 # TypeScript Module Package Skeleton
 
 [![npm](https://img.shields.io/npm/v/@makenew/tsmodule.svg)](https://www.npmjs.com/package/@makenew/tsmodule)
-[![GitHub Actions](https://github.com/makenew/tsmodule/workflows/check/badge.svg)](https://github.com/makenew/tsmodule/actions)
+[![GitHub Actions](https://github.com/makenew/tsmodule/actions/workflows/check.yml/badge.svg)](https://github.com/makenew/tsmodule/actions/workflows/check.yml)
 
 Package skeleton for a TypeScript module.
 
