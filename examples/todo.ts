@@ -1,6 +1,6 @@
-import { todo } from 'index.js'
+import type { Builder, Command, Describe, Handler } from 'landlubber'
 
-import type { Builder, Command, Handler } from './types.js'
+import { todo } from 'index.js'
 
 interface Options {
   x: string
@@ -8,9 +8,13 @@ interface Options {
 
 export const command: Command = 'todo x'
 
+export const describe: Describe = 'TODO'
+
 export const builder: Builder = {
   x: {
-    type: 'string'
+    type: 'string',
+    default: 'TODO',
+    describe: 'TODO'
   }
 }
 
