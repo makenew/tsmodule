@@ -42,12 +42,12 @@
     "test:watch": "ava --watch",
     "test:debug": "ava debug --break",
     "lint": "eslint --ignore-path .gitignore --ext .js,.cjs,.mjs,.ts,.tsx .",
-    "prelint": "prettier --check --ignore-path .gitignore '**/*.(js|cjs|mjs|ts|tsx|json|yml|yaml|graphql)'",
+    "prelint": "prettier --check --ignore-path .gitignore .",
     "postversion": "git push --follow-tags",
     "example": "tsx examples",
     "example:inspect": "tsx --inspect examples",
     "format": "eslint --ignore-path .gitignore --fix --ext .js,.cjs,.mjs,.ts,.tsx .",
-    "preformat": "prettier --write --ignore-path .gitignore '**/*.(js|cjs|mjs|ts|tsx|json|yml|yaml|graphql)'",
+    "preformat": "prettier --write --ignore-path .gitignore .",
     "report": "c8 report"
   },
   "engines": {
