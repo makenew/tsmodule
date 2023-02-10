@@ -5,6 +5,7 @@ export default () => {
   process.env.NODE_NO_WARNINGS = '1'
 
   return {
+    ignoredByWatcher: ['tmp/**/*'],
     files: ['**/*.spec.ts', '!package/**/*'],
     extensions: {
       ts: 'module'
