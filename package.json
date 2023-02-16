@@ -8,7 +8,7 @@
   "exports": {
     "import": "./index.js"
   },
-  "module": "index.ts",
+  "module": "index.js",
   "sideEffects": false,
   "keywords": [
     "node"
