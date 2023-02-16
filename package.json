@@ -1,6 +1,6 @@
 {
   "name": "@makenew/tsmodule",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Package skeleton for a TypeScript module.",
   "type": "module",
   "main": "index.js",
