@@ -34,7 +34,7 @@
     "build": "npm run build:ts",
     "postbuild": "node ./index.js",
     "build:ts": "tsc --project tsconfig.build.json",
-    "prebuild:ts": "del index.js index.js.map index.d.ts lib",
+    "prebuild:ts": "del 'index.*' lib",
     "postbuild:ts": "tsc-alias --project tsconfig.build.json",
     "typecheck": "tsc",
     "test": "c8 ava",
