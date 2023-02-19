@@ -12,7 +12,7 @@ Bootstrap a new TypeScript module in five minutes or less.
 ### Features
 
 - Strongly typed JavaScript with [TypeScript].
-- [Node.js]'s [npm] package structure.
+- Native [ECMAScript module] compatible with [Node.js].
 - Package management with [npm].
 - Examples with configurable options and arguments powered by [yargs] with [landlubber].
 - Linting with the [JavaScript Standard Style] using [ESLint].
@@ -25,20 +25,21 @@ Bootstrap a new TypeScript module in five minutes or less.
 - Badges from [Shields.io].
 
 [AVA]: https://github.com/avajs/ava
+[ECMAScript module]: https://nodejs.org/api/esm.html
 [ESLint]: https://eslint.org/
 [EditorConfig]: https://editorconfig.org/
 [GitHub Actions]: https://github.com/features/actions
 [Istanbul]: https://istanbul.js.org/
 [JavaScript Standard Style]: https://standardjs.com/
 [Keep a CHANGELOG]: https://keepachangelog.com/
-[landlubber]: https://github.com/razor-x/landlubber
 [Node.js]: https://nodejs.org/
 [Prettier]: https://prettier.io/
 [Shields.io]: https://shields.io/
-[c8]: https://github.com/bcoe/c8
-[yargs]: https://yargs.js.org/
-[npm]: https://www.npmjs.com/
 [TypeScript]: https://www.typescriptlang.org/
+[c8]: https://github.com/bcoe/c8
+[landlubber]: https://github.com/razor-x/landlubber
+[npm]: https://www.npmjs.com/
+[yargs]: https://yargs.js.org/
 
 ### Bootstrapping a new project
 
