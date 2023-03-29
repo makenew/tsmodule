@@ -1,7 +1,7 @@
 {
   "root": true,
   "extends": ["standard-with-typescript", "prettier"],
-  "plugins": ["simple-import-sort"],
+  "plugins": ["simple-import-sort", "unused-imports"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -12,6 +12,18 @@
       "warn",
       {
         "fixStyle": "inline-type-imports"
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_",
+        "ignoreRestSiblings": true
       }
     ],
     "sort-imports": [
