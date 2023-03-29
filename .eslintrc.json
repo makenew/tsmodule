@@ -1,6 +1,7 @@
 {
   "root": true,
   "extends": ["standard-with-typescript", "prettier"],
+  "plugins": ["simple-import-sort"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -20,35 +21,21 @@
         "allowSeparatedGroups": true
       }
     ],
-    "import/no-duplicates": ["error", { "prefer-inline": true }],
-    "import/order": [
+    "simple-import-sort/imports": [
       "error",
       {
-        "newlines-between": "always",
-        "alphabetize": {
-          "order": "asc"
-        },
         "groups": [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index"
-        ],
-        "pathGroupsExcludedImportTypes": ["builtin"],
-        "pathGroups": [
-          {
-            "pattern": "index.js",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "lib/**",
-            "group": "internal"
-          }
+          ["^\\u0000"],
+          ["^node:"],
+          ["^@?\\w"],
+          ["index.js"],
+          ["^lib/"],
+          ["^"],
+          ["^\\."]
         ]
       }
-    ]
+    ],
+    "simple-import-sort/exports": "error",
+    "import/no-duplicates": ["error", { "prefer-inline": true }]
   }
 }
