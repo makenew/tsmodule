@@ -28,7 +28,7 @@
     "lib",
     "src",
     "!test",
-    "!**/*.spec.ts"
+    "!**/*.test.ts"
   ],
   "scripts": {
     "build": "npm run build:ts",

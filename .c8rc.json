@@ -3,7 +3,7 @@
     "**/index.ts",
     "package/**/*.ts",
     "examples/**/*.ts",
-    "**/*.spec.ts",
+    "**/*.test.ts",
     "ava.config.js"
   ],
   "reporter": ["html", "lcov", "text"]
