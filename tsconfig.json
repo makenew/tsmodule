@@ -20,8 +20,8 @@
     "noUnusedParameters": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "index.js": ["./src/index.ts"],
-      "lib/*": ["./src/lib/*"]
+      "@/index.js": ["./src/index.ts"],
+      "@/lib/*": ["./src/lib/*"]
     }
   },
   "files": ["src/index.ts"],

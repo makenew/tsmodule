@@ -1,6 +1,6 @@
 import type { Builder, Command, Describe, Handler } from 'landlubber'
 
-import { todo } from 'index.js'
+import { todo } from '@/index.js'
 
 interface Options {
   x: string
