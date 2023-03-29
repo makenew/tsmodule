@@ -7,9 +7,8 @@
   },
   "rules": {
     "no-console": "warn",
-    "import/extensions": ["error", "ignorePackages"],
     "@typescript-eslint/consistent-type-imports": [
-      "warn",
+      "error",
       {
         "fixStyle": "inline-type-imports"
       }
@@ -26,6 +25,8 @@
         "ignoreRestSiblings": true
       }
     ],
+    "import/extensions": ["error", "ignorePackages"],
+    "import/no-duplicates": ["error", { "prefer-inline": true }],
     "sort-imports": [
       "error",
       {
@@ -47,7 +48,6 @@
         ]
       }
     ],
-    "simple-import-sort/exports": "error",
-    "import/no-duplicates": ["error", { "prefer-inline": true }]
+    "simple-import-sort/exports": "error"
   }
 }
