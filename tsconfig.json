@@ -1,6 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./tsconfig.standard.json",
   "compilerOptions": {
     "noEmit": true,
     "strict": true,
@@ -12,12 +11,16 @@
     "sourceMap": true,
     "newLine": "lf",
     "verbatimModuleSyntax": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
     "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
     "noUnusedParameters": true,
+    "noUnusedLocals": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
       "index.js": ["./src/index.ts"],
