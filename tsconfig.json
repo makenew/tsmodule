@@ -3,11 +3,11 @@
   "compilerOptions": {
     "noEmit": true,
     "strict": true,
+    "composite": true,
     "module": "nodenext",
     "esModuleInterop": true,
     "target": "es2021",
     "jsx": "react-jsx",
-    "declaration": true,
     "sourceMap": true,
     "newLine": "lf",
     "verbatimModuleSyntax": true,
