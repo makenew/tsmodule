@@ -6,7 +6,8 @@
   "main": "index.js",
   "types": "./index.d.ts",
   "exports": {
-    "import": "./index.js"
+    "import": "./index.js",
+    "types": "./index.d.ts"
   },
   "module": "index.js",
   "sideEffects": false,
