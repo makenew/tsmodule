@@ -55,6 +55,7 @@
         "project": "./tsconfig.json"
       },
       "rules": {
+        "@typescript-eslint/no-import-type-side-effects": "error",
         "@typescript-eslint/consistent-type-imports": [
           "error",
           {
