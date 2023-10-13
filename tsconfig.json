@@ -3,9 +3,9 @@
   "compilerOptions": {
     "noEmit": true,
     "strict": true,
-    "module": "nodenext",
+    "module": "NodeNext",
     "esModuleInterop": true,
-    "target": "es2021",
+    "target": "ES2022",
     "jsx": "react-jsx",
     "declaration": true,
     "sourceMap": true,
