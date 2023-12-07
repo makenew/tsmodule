@@ -1,7 +1,9 @@
 export default () => {
   return {
-    ignoredByWatcher: ['tmp/**/*'],
     files: ['**/*.test.ts', '!package/**/*'],
+    ignoreChanges: {
+      watchMode: ['tmp/**/*']
+    },
     extensions: {
       ts: 'commonjs'
     },
