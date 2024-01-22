@@ -30,6 +30,8 @@
     "index.d.ts",
     "lib",
     "src",
+    "!test",
+    "!**/*.spec.ts",
     "!**/*.test.ts"
   ],
   "scripts": {
