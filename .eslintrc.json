@@ -45,10 +45,7 @@
     },
     {
       "files": ["*.ts", "*.tsx"],
-      "extends": ["standard-with-typescript", "prettier"],
-      "parserOptions": {
-        "project": "./tsconfig.json"
-      },
+      "extends": ["love", "prettier"],
       "rules": {
         "@typescript-eslint/no-import-type-side-effects": "error",
         "@typescript-eslint/consistent-type-imports": [
