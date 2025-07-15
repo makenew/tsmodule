@@ -53,7 +53,7 @@
     "example": "tsx examples",
     "example:inspect": "tsx --inspect examples",
     "format": "prettier --write --ignore-path .gitignore .",
-    "postformat": "eslint --fix .",
+    "preformat": "eslint --fix .",
     "report": "c8 report"
   },
   "engines": {
