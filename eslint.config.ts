@@ -10,13 +10,13 @@ export default [
       ...love.rules,
       'import/extensions': ['error', 'ignorePackages'],
       'import/no-duplicates': ['error', { 'prefer-inline': true }],
-      'import/no-relative-parent-imports': 'error'
+      'import/no-relative-parent-imports': 'error',
     },
-    files: ['**/*.{ts,tsx}']
+    files: ['**/*.{ts,tsx}'],
   },
   {
     plugins: {
-      'unused-imports': unusedImports
+      'unused-imports': unusedImports,
     },
     rules: {
       '@typescript-eslint/no-unused-vars': 'off',
@@ -28,15 +28,15 @@ export default [
           varsIgnorePattern: '^_',
           args: 'after-used',
           argsIgnorePattern: '^_',
-          ignoreRestSiblings: true
-        }
-      ]
-    }
+          ignoreRestSiblings: true,
+        },
+      ],
+    },
   },
 
   {
     plugins: {
-      'simple-import-sort': simpleImportSort
+      'simple-import-sort': simpleImportSort,
     },
     rules: {
       'simple-import-sort/imports': [
@@ -49,12 +49,12 @@ export default [
             ['@makenew/tsmodule'],
             ['^lib/'],
             ['^'],
-            ['^\\.']
-          ]
-        }
+            ['^\\.'],
+          ],
+        },
       ],
-      'simple-import-sort/exports': 'error'
-    }
+      'simple-import-sort/exports': 'error',
+    },
   },
-  prettier
+  prettier,
 ]
