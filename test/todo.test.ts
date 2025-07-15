@@ -1,7 +1,8 @@
-import test from 'ava'
+import { strictEqual } from 'node:assert'
+import test from 'node:test'
 
 import { todo } from '@makenew/tsmodule'
 
-test('todo: returns argument', (t) => {
-  t.is(todo('todo'), 'todo', 'returns input')
+await test('todo: returns argument', () => {
+  strictEqual(todo('todo'), 'todo', 'returns input')
 })
