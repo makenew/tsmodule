@@ -15,7 +15,7 @@ Bootstrap a new TypeScript module in five minutes or less.
 - Native [ECMAScript module] compatible with [Node.js].
 - Package management with [npm].
 - Examples with configurable options and arguments powered by [yargs] with [landlubber].
-- Linting with the [JavaScript Standard Style] using [ESLint].
+- Linting with [eslint-config-love] using [ESLint].
 - [Prettier] code.
 - Futuristic debuggable unit testing with [AVA].
 - Code coverage reporting with [Istanbul] and [c8].
@@ -33,7 +33,7 @@ Bootstrap a new TypeScript module in five minutes or less.
 [GitHub Actions]: https://github.com/features/actions
 [GitHub Codespaces]: https://github.com/features/codespaces
 [Istanbul]: https://istanbul.js.org/
-[JavaScript Standard Style]: https://standardjs.com/
+[eslint-config-love]: https://github.com/mightyiam/eslint-config-love
 [Keep a CHANGELOG]: https://keepachangelog.com/
 [Node.js]: https://nodejs.org/
 [Prettier]: https://prettier.io/
