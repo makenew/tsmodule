@@ -1,3 +1,4 @@
+import { globalIgnores } from 'eslint/config'
 import love from 'eslint-config-love'
 import prettier from 'eslint-config-prettier/flat'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
@@ -6,6 +7,7 @@ import unusedImports from 'eslint-plugin-unused-imports'
 const files = ['**/*.{ts,tsx}']
 
 export default [
+  globalIgnores(['**/*.d.ts']),
   {
     ...love,
     files,
