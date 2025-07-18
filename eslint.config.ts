@@ -1,23 +1,13 @@
 import { globalIgnores } from 'eslint/config'
-import love from 'eslint-config-love'
-import prettier from 'eslint-config-prettier/flat'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import unusedImports from 'eslint-plugin-unused-imports'
+import neostandard, { resolveIgnoresFromGitignore } from 'neostandard'
 
 const files = ['**/*.{ts,tsx}']
 
 export default [
-  globalIgnores(['**/*.d.ts']),
-  {
-    ...love,
-    files,
-    rules: {
-      ...love.rules,
-      'import/extensions': ['error', 'ignorePackages'],
-      'import/no-duplicates': ['error', { 'prefer-inline': true }],
-      'import/no-relative-parent-imports': 'error',
-    },
-  },
+  globalIgnores(resolveIgnoresFromGitignore()),
+  ...neostandard({ ts: true, noStyle: true }),
   {
     files,
     plugins: {
@@ -61,5 +51,4 @@ export default [
       'simple-import-sort/exports': 'error',
     },
   },
-  { ...prettier, files },
 ]
