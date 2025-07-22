@@ -1,4 +1,5 @@
 import { globalIgnores } from 'eslint/config'
+import importPlugin from 'eslint-plugin-import'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import unusedImports from 'eslint-plugin-unused-imports'
 import neostandard, { resolveIgnoresFromGitignore } from 'neostandard'
@@ -10,11 +11,29 @@ export default [
   ...neostandard({ ts: true, noStyle: true }),
   {
     files,
+    rules: {
+      'no-console': 'error',
+      '@typescript-eslint/no-non-null-assertion': 'error',
+    },
+  },
+  {
+    files,
     plugins: {
       'unused-imports': unusedImports,
+      import: importPlugin,
     },
     rules: {
       '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-import-type-side-effects': 'error',
+      '@typescript-eslint/consistent-type-imports': [
+        'error',
+        {
+          fixStyle: 'inline-type-imports',
+        },
+      ],
+      'import/extensions': ['error', 'ignorePackages'],
+      'import/no-duplicates': ['error', { 'prefer-inline': true }],
+      'import/no-relative-parent-imports': 'error',
       'unused-imports/no-unused-imports': 'error',
       'unused-imports/no-unused-vars': [
         'error',
