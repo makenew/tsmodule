@@ -7,7 +7,7 @@
     "strict": true,
     "module": "nodenext",
     "esModuleInterop": true,
-    "target": "es2021",
+    "target": "es2023",
     "jsx": "react-jsx",
     "sourceMap": true,
     "newLine": "lf",
