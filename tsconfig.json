@@ -7,6 +7,7 @@
     "strict": true,
     "module": "nodenext",
     "esModuleInterop": true,
+    "moduleDetection": "force",
     "target": "es2023",
     "jsx": "react-jsx",
     "sourceMap": true,
